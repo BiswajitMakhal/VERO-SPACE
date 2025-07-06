@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="container-wrapper">
+                <nav class="nav">
+                    <ul class="mobile-hidden">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Properties</a></li>
+                    </ul>
+                    <div class="nav-logo mx-auto">
+                        <a href="#">
+                            <img src="./Assets/nav-logoo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-btn ms-auto">
+                        <a href="">Contact us</a>
+                        <a href="">Login</a>
+                    </div>
+                    <div class="nav-toggler" id="nav-toggler">
+                        <span></span>
+                    </div>
+                    <!-- Mobile nav -->
+                    <div class="mobile-nav" id="mobile-nav">
+                        <div class="mobile-ul">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Properties</a></li>
+                            <a href="">Contact us</a>
+                            <a href="">Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Banner section -->
+    <section class="banner-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Perfect Platform For Buying Or <br>Renting <span class="mark">Houses, Flats, And Villas</span>
+                    </h1>
+                    <span>Search thousands of homes. Find the one that fits you.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Range section -->
+    <section class="range-section">
+        <div class="container">
+            <div class="range-box">
+                <div class="rent-usd">
+                    <div class="range mb-1">
+                        <figure class="dollar-sign">
+                            <img src="./Assets/dollar-sign 1.png" alt="">
+                        </figure>
+                        <select name="" id="">
+                            <option value="">Rent</option>
+                            <option value="">Buy</option>
+                        </select>
+                    </div>
+                    <div class="price-range">
+                        <label for="price-range">Price Range</label>
+                        <div class="range">
+                            <figure class="usd-img">
+                                <img src="./Assets/$.png" alt="">
+                            </figure>
+                            <select name="price-range" id="price-range">
+                                <option value="">USD</option>
+                                <option value="">INR</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="desire">
+                    <input type="text" name="" id="desire-location" placeholder="Your desiered location goes here">
+                    <!-- ========= dual‑price slider ========= -->
+                    <div id="price-slider" class="dual-slider">
+                        <span class="badge" id="priceMin">$ 5,000</span>
+                        <span class="badge" id="priceMax">$ 15,000</span>
+
+                        <div class="track"><span id="fill"></span></div>
+
+                        <!-- the two overlapping range inputs -->
+                        <input type="range" id="inputMin" min="0" max="20000" step="100" value="5000">
+                        <input type="range" id="inputMax" min="0" max="20000" step="100" value="15000">
+                    </div>
+                    <!-- ===================================== -->
+                </div>
+                <div class="house-room">
+                    <div class="range mb-3">
+                        <figure class="house-img">
+                            <img src="./Assets/house.png" alt="">
+                        </figure>
+                        <select name="" id="">
+                            <option value="">House</option>
+                            <option value="">Flat</option>
+                        </select>
+                    </div>
+                    <div class="range">
+                        <figure class="room-img">
+                            <img src="./Assets/room.png" alt="">
+                        </figure>
+                        <select name="" id="">
+                            <option value="">2 Rooms</option>
+                            <option value="">3 Rooms</option>
+                            <option value="">4 Rooms</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="border-y">
+                    <span></span>
+                </div>
+                <div class=" search-btn">
+                    <div class="btn btn-primary">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apartment section -->
+    <section class="apartment-section">
+        <div class="container-2">
+            <div class="apart-content">
+                <h2 class="text-center mb-5">Explore Apartment Types</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                    <div class="prop-card text-center">
+                        <div class="prop-img">
+                            <img src="./Assets/commercial.png" alt="">
+                        </div>
+                        <div class="title fw-semibold">Commercial</div>
+                        <div class="prop-6">6 Properties</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                    <div class="prop-card text-center">
+                        <div class="prop-img">
+                            <img src="./Assets/Residencial (2).png" alt="">
+                        </div>
+                        <div class="title fw-semibold">Residencial</div>
+                        <div class="prop-6">6 Properties</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                    <div class="prop-card text-center">
+                        <div class="prop-img">
+                            <img src="./Assets/villa.png" alt="">
+                        </div>
+                        <div class="title fw-semibold">Villa</div>
+                        <div class="prop-6">6 Properties</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                    <div class="prop-card text-center">
+                        <div class="prop-img">
+                            <img src="./Assets/Apartment.png" alt="">
+                        </div>
+                        <div class="title fw-semibold">Apartment</div>
+                        <div class="prop-6">6 Properties</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                    <div class="prop-card text-center">
+                        <div class="prop-img">
+                            <img src="./Assets/ph_warehouse-bold.png" alt="">
+                        </div>
+                        <div class="title fw-semibold">Warehouse</div>
+                        <div class="prop-6">6 Properties</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="about-img">
+                        <img src="./Assets/about-merge.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 my-auto">
+                    <div class="about-content">
+                        <div class="blue d-flex gap-3 align-items-center">
+                            <span class="blue-line"></span>
+                            <span class="title">About Us </span>
+                        </div>
+                        <h2>Welcome To VeroSpace, Your Trusted Real Estate Expert.</h2>
+                        <p>We believe real estate is more than transactions—it’s about people, relationships, and the
+                            moments that turn a house into a home. That’s why we’re here to support you like a trusted
+                            friend, every step of the way.</p>
+                        <div class="counter-box h-100 d-flex align-items-center">
+                            <div class="count">
+                                <div class="about-radius">
+                                    <div class="about-icon ">
+                                        <img src="./Assets/fa-solid_smile.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon-content">
+                                    <h2 class="counter" data-target="15">0</h2> <!-- 15 K -->
+                                    <p>Trusted Customer</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <div class="about-radius">
+                                    <div class="about-icon ">
+                                        <img src="./Assets/gridicons_house.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon-content">
+                                    <h2 class="counter" data-target="20">0</h2> <!-- 20 K -->
+                                    <p>Houses Sold</p>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <div class="about-radius">
+                                    <div class="about-icon ">
+                                        <img src="./Assets/fluent_agents-28-filled.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="icon-content">
+                                    <h2 class="counter" data-target="75">0</h2> <!-- 75 K -->
+                                    <p>Property Listed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Explore section -->
+    <section class="explore-section">
+        <div class="explore-wrapper">
+            <div class="container">
+                <div class="blue d-flex gap-3 align-items-center">
+                    <span class="blue-line"></span>
+                    <span class="title">Recently Added</span>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6 fw-semibold">
+                        <h2>Explore Our Newly Listed Properties</h2>
+                    </div>
+                    <div class="col-12 col-md-6 slider-btn">
+                        <a href="">All Listing</a>
+                    </div>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper" id="explore-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper mt-5">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-1 position-relative">
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4">
+                                        <span>Sobha Heartland Villa</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Berlin, Germany</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-2 position-relative">
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4">
+                                        <span>Hillside Haven</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex mt-4">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Genoa, Italy </span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-3 position-relative">
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4">
+                                        <span>Island Paradise Villa</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Paris, France</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-4 position-relative">
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4">
+                                        <span>Emerald Coast Manor</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Lyon, France</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-3 position-relative">
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4">
+                                        <span>Sobha Heartland Villa</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Berlin, Germany</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services section -->
+    <section class="services-section" id="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="blue d-flex gap-3 align-items-center">
+                        <span class="blue-line"></span>
+                        <span class="title">Other Service</span>
+                    </div>
+                    <h2>We Make Sell Or Rent Your Property Simple and Profitable.</h2>
+                    <p>We are the most respected Realestate company in the industry. We deliver extraordinary facility
+                        to the customer.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et aliquet sed nibh porttitor lacus. Sodales maecenas
+                        aliquam dis neque posuere urna. Sodales </p>
+                        <a class="submit-btn" href="">Submit Property</a>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="service-img">
+                        <img src="./Assets/Services.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./JS/index.js"></script>
+
+
+    <!-- Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
