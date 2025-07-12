@@ -7,44 +7,36 @@ $(document).ready(function () {
 
 
 /* ---------- price slider ---------- */
-(function () {
-  const wrap = document.getElementById('price-slider');
-  if (!wrap) return;                       // bail out if slider not on page
+const inputMin = document.getElementById("inputMin");
+const inputMax = document.getElementById("inputMax");
+const priceMin = document.getElementById("priceMin");
+const priceMax = document.getElementById("priceMax");
+const fill = document.getElementById("fill");
 
-  const minInput = document.getElementById('inputMin');
-  const maxInput = document.getElementById('inputMax');
-  const fill = document.getElementById('fill');
-  const badgeMin = document.getElementById('priceMin');
-  const badgeMax = document.getElementById('priceMax');
-  const maxVal = +minInput.max;          // 20000
+function updateSlider() {
+  let minVal = parseInt(inputMin.value);
+  let maxVal = parseInt(inputMax.value);
 
-  const fmt = v => '$\u202F' + (+v).toLocaleString(); // narrow‑NBSP after $
-
-  function update() {
-    /* keep thumbs from crossing */
-    if (+minInput.value > +maxInput.value) {
-      [minInput.value, maxInput.value] = [maxInput.value, minInput.value];
-    }
-
-    const pctMin = (minInput.value / maxVal) * 100;
-    const pctMax = (maxInput.value / maxVal) * 100;
-
-    /* fill bar */
-    fill.style.left = pctMin + '%';
-    fill.style.width = (pctMax - pctMin) + '%';
-
-    /* badges */
-    const w = wrap.clientWidth;
-    badgeMin.style.left = (pctMin / 100 * w) + 'px';
-    badgeMax.style.left = (pctMax / 100 * w) + 'px';
-    badgeMin.textContent = fmt(minInput.value);
-    badgeMax.textContent = fmt(maxInput.value);
+  if (minVal >= maxVal) {
+    minVal = maxVal - 100;
+    inputMin.value = minVal;
   }
 
-  update();
-  [minInput, maxInput].forEach(i => i.addEventListener('input', update));
-  window.addEventListener('resize', update);
-})();
+  priceMin.textContent = `$ ${minVal.toLocaleString()}`;
+  priceMax.textContent = `$ ${maxVal.toLocaleString()}`;
+
+  const range = inputMax.max - inputMin.min;
+  const leftPercent = ((minVal - inputMin.min) / range) * 100;
+  const rightPercent = ((maxVal - inputMin.min) / range) * 100;
+
+  fill.style.left = `${leftPercent}%`;
+  fill.style.width = `${rightPercent - leftPercent}%`;
+}
+
+inputMin.addEventListener("input", updateSlider);
+inputMax.addEventListener("input", updateSlider);
+
+updateSlider();
 
 // Live Conting//
 const SPEED = 200;   // smaller = faster (affects step size)

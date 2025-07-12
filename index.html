@@ -95,15 +95,17 @@
                 <div class="desire">
                     <input type="text" name="" id="desire-location" placeholder="Your desiered location goes here">
                     <!-- ========= dual‑price slider ========= -->
-                    <div id="price-slider" class="dual-slider">
-                        <span class="badge" id="priceMin">$ 5,000</span>
-                        <span class="badge" id="priceMax">$ 15,000</span>
-
-                        <div class="track"><span id="fill"></span></div>
-
-                        <!-- the two overlapping range inputs -->
-                        <input type="range" id="inputMin" min="0" max="20000" step="100" value="5000">
-                        <input type="range" id="inputMax" min="0" max="20000" step="100" value="15000">
+                    <div class="slider-wrapper">
+                        <div class="values">
+                            <span id="priceMin">$ 5,000</span>
+                            <span id="priceMax">$ 15,000</span>
+                        </div>
+                        <div class="range-slider">
+                            <input type="range" id="inputMin" min="0" max="20000" step="100" value="5000">
+                            <input type="range" id="inputMax" min="0" max="20000" step="100" value="15000">
+                            <div class="slider-track"></div>
+                            <div class="slider-fill" id="fill"></div>
+                        </div>
                     </div>
                     <!-- ===================================== -->
                 </div>
