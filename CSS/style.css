@@ -250,7 +250,7 @@ h1 {
 }
 
 .values span {
-    background: #5f2eed;
+    background: var(--primary-color);
     color: #fff;
     padding: 6px 14px;
     border-radius: 20px;
@@ -291,7 +291,7 @@ input[type=range]::-moz-range-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #5f2eed;
+    background: var(--primary-color);
     cursor: pointer;
     pointer-events: auto;
 }
@@ -308,7 +308,7 @@ input[type=range]::-moz-range-thumb {
 .slider-fill {
     position: absolute;
     height: 8px;
-    background: #5f2eed;
+    background: var(--primary-color);
     z-index: 1;
     border-radius: 5px;
 }
