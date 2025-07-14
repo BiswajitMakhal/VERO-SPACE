@@ -185,7 +185,7 @@ h1 {
 .house-img {
     height: 14px;
     width: 14px;
-    margin: 0 0 9px;
+    margin: 0 0 11px;
 }
 
 .dollar-sign>img,
@@ -901,6 +901,11 @@ input[type=range]::-moz-range-thumb {
         justify-content: center;
     }
 
+    .rent-usd,
+    .range select {
+        width: 100%;
+    }
+
     .border-y {
         display: none;
     }
@@ -934,7 +939,7 @@ input[type=range]::-moz-range-thumb {
         margin: 0 auto;
     }
 
-    /* Email section */
+    /* Email newsletter section */
     .email-title {
         margin: 0 auto;
         margin-bottom: 15px;
