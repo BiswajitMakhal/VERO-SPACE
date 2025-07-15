@@ -212,6 +212,78 @@ h1 {
     margin-top: 36px;
 }
 
+/* Property section */
+.blue-line {
+    display: inline-block;
+    height: 2px;
+    width: 55px;
+    background: var(--primary-color);
+}
+
+.line {
+    height: 2px;
+    width: 100vw;
+    background: #000;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--seconday-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.card-d,
+.card-f,
+.card-e {
+    position: relative;
+    top: -27px;
+}
+
+.card-c {
+    text-align: center;
+    padding: 35px 20px;
+    max-width: 200px;
+    max-height: 220px;
+    border-radius: 25px;
+    box-shadow: 0 -4px 35px rgba(0, 0, 0, 0.271);
+}
+
+.card-top {
+    margin: 0 auto 45px;
+}
+
+.card-first,
+.card-third {
+    margin-top: 30px;
+}
+
+.circle>h4 {
+    margin: 0;
+}
+
+/* For tablet screen */
+.border-left>span {
+    display: inline-block;
+    width: 2px;
+    height: 650px;
+    background: #000;
+}
+
+.tablet-screen {
+    display: none !important;
+}
+
+.tablet-card {
+    position: relative;
+    left: -29px;
+}
+
 
 /*----------------------------------------------------- BREAKPOINT -------------------------------------------------------------*/
 
@@ -335,6 +407,16 @@ h1 {
         margin-bottom: 12px;
     }
 
+    /* PROPERTY SECTION */
+    .laptop-screen {
+        display: none;
+    }
+
+    /* for tablet screen */
+    .tablet-screen {
+        display: flex !important;
+    }
+
 }
 
 @media screen and (max-width:576px) {
@@ -372,6 +454,14 @@ h1 {
         font-size: 12px;
     }
 
+    .form-wrapper {
+        padding: 14px;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 10px;
+    }
 
 
     /* Copyright section */
