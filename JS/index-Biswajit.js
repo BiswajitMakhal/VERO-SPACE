@@ -5,7 +5,6 @@ $(document).ready(function () {
 });
 
 
-
 /* ---------- price slider ---------- */
 const inputMin = document.getElementById("inputMin");
 const inputMax = document.getElementById("inputMax");

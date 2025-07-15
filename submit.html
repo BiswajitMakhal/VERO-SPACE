@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/submit.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="container-wrapper">
+                <nav class="nav">
+                    <ul class="mobile-hidden">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./property.html">Properties</a></li>
+                    </ul>
+                    <div class="nav-logo mx-auto">
+                        <a href="#">
+                            <img src="./Assets/nav-logoo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-btn ms-auto">
+                        <a href="./contact.html">Contact us</a>
+                        <a href="">Login</a>
+                    </div>
+                    <div class="nav-toggler" id="nav-toggler">
+                        <span></span>
+                    </div>
+                    <!-- Mobile nav -->
+                    <div class="mobile-nav" id="mobile-nav">
+                        <div class="mobile-ul">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./property.html">Properties</a></li>
+                            <a href="./contact.html">Contact us</a>
+                            <a href="">Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Banner section -->
+    <section class="banner-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Properties</h1>
+                    <span>Home</span>
+                    <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
+                    <span>Submit Property</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Details section -->
+    <section class="contact-details-section">
+        <div class="container">
+            <form class="form-wrapper">
+                <div class="row ">
+                    <!-- Left Column -->
+                    <div class="col-lg-6 border-right left-column">
+                        <h5>Basic Information</h5>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Property Title">
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Type</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Status</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Price</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5>Location</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Country</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>City</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Zip">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+
+                        <h5>Gallery</h5>
+                        <div class="mb-3 upload-box-1">
+                            <label class="upload-box d-flex gap-1 justify-content-center align-items-center"
+                                for="fileUpload">
+                                <div class="upload-img">
+                                    <img src="./Assets/uplaod.png" alt="">
+                                </div>
+                                <div class="upload-demo">
+                                    Choose a file <span> or Drag it here</span>
+                                </div>
+                                <input type="file" id="fileUpload" class="d-none">
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-6 right-column">
+                        <h5>Contact Details</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <h5>Detail information</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Bedrooms</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Bathrooms</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select">
+                                    <option>Area, Sq Ft</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Parking Lot
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Balcony
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Lawn</div>
+                                </div>
+
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Wi-Fi</div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Ocean View
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Fireplace
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Gym</div>
+                                </div>
+                                <div class=" col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Near
+                                        Hospital
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-sm-4">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox"> Laundry
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control comment-optional" placeholder="Comment (Optional)"
+                                rows="4"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn submit-btn px-4">Submit Property</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./JS/submit.js"></script>
+
+
+    <!-- Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

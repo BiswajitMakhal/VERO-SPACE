@@ -343,7 +343,7 @@ input[type=range]::-moz-range-thumb {
 .prop-card {
     border-radius: 25px;
     background: var(--seconday-color);
-    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.115);
+    box-shadow: 0 4px 35px rgba(0, 0, 0, 0.120);
     padding: 29px 30px;
     text-wrap: nowrap;
 }
@@ -371,10 +371,6 @@ input[type=range]::-moz-range-thumb {
     padding: 75px 0;
 }
 
-.counter-box {
-    gap: 66px;
-}
-
 .blue-line {
     display: inline-block;
     height: 2px;
@@ -399,18 +395,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 .about-radius {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
     border-radius: 50%;
     box-shadow: 0 6px 35px rgba(0, 0, 0, 0.115);
 }
 
 .about-icon {
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 .about-icon>img {
@@ -424,6 +415,10 @@ input[type=range]::-moz-range-thumb {
     color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 3px;
+}
+
+.icon-content {
+    height: 60px;
 }
 
 /* Explore section */
@@ -688,7 +683,7 @@ input[type=range]::-moz-range-thumb {
     }
 }
 
-/* Email section */
+/* Email newsletter section */
 .email-section {
     padding: 75px 0;
 }
@@ -795,11 +790,6 @@ input[type=range]::-moz-range-thumb {
 }
 
 @media screen and (max-width:1200px) {
-
-    /* About-section */
-    .counter-box {
-        gap: 40px;
-    }
 
     /* Testimonial section */
     .test-card,
@@ -916,12 +906,25 @@ input[type=range]::-moz-range-thumb {
     }
 
     /* About section */
+    .about-img {
+        margin: 0 auto;
+    }
+
     .blue {
-        margin-top: 15px
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .about-content {
+        text-align: center;
     }
 
     .counter {
         font-size: 20px;
+    }
+
+    .counter-box {
+        text-align: start;
     }
 
     /* Services section */
@@ -1021,6 +1024,10 @@ input[type=range]::-moz-range-thumb {
         font-size: 10px;
     }
 
+    .container-fluid {
+        min-height: 440px;
+    }
+
     /* Range section */
 
     #desire-location {
@@ -1038,12 +1045,8 @@ input[type=range]::-moz-range-thumb {
         padding: 30px 0;
     }
 
-    .counter-box {
-        gap: 15px;
-    }
-
     .count {
-        flex-wrap: wrap;
+        margin-bottom: 40px;
     }
 
     /* Explore section */

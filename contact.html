@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="container-wrapper">
+                <nav class="nav">
+                    <ul class="mobile-hidden">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./property.html">Properties</a></li>
+                    </ul>
+                    <div class="nav-logo mx-auto">
+                        <a href="#">
+                            <img src="./Assets/nav-logoo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-btn ms-auto">
+                        <a href="">Contact us</a>
+                        <a href="">Login</a>
+                    </div>
+                    <div class="nav-toggler" id="nav-toggler">
+                        <span></span>
+                    </div>
+                    <!-- Mobile nav -->
+                    <div class="mobile-nav" id="mobile-nav">
+                        <div class="mobile-ul">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                            <li><a href="./property.html">Properties</a></li>
+                            <a href="">Contact us</a>
+                            <a href="">Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Banner section -->
+    <section class="banner-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Contact Us</h1>
+                    <span>Home</span>
+                    <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
+                    <span>About us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- git in touch section -->
+    <section class="touch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="blue d-flex gap-3 align-items-center">
+                        <span class="blue-line"></span>
+                        <span class="title">Get In Touch</span>
+                    </div>
+                    <div class="h1">
+                        How We Can Help You?
+                    </div>
+                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur. Turpis faucibus nulla vestibulum dolor.
+                        Dictum.</p>
+                    <hr>
+                    <div class="address d-flex gap-4">
+                        <div class="addr-img">
+                            <img src="./Assets/addr.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>2690 Hiltona Street Victoria
+                                Road, New York, Canada</p>
+                        </div>
+                    </div>
+                    <div class="phone d-flex gap-4">
+                        <div class="addr-img">
+                            <img src="./Assets/phone.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+01 09 256 2569</p>
+                        </div>
+                    </div>
+                    <div class="email-addr d-flex gap-4">
+                        <div class="addr-img">
+                            <img src="./Assets/emailaddr.png" alt="">
+                        </div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>support24@verospace.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 touch">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="name">First Name</label>
+                                <input type="text" name="name" id="name" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="last">Last Name</label>
+                                <input type="text" name="last" id="last" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="phone">Phone </label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="email-2">Email</label>
+                                <input type="email" name="email-2" id="email-2" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="message">Massage</label>
+                                <textarea name="message" id="message" placeholder="Massage" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="submit-btn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="flip-panel  mx-auto">
+                <div class="blue d-flex gap-3 align-items-center justify-content-center">
+                    <span class="blue-line"></span>
+                    <span class="title">FAQ</span>
+                </div>
+                <h2 class="text-center">
+                    We’re Here To Help You</h2>
+                <!-- flip-1 -->
+                <div class="d-flex flip-1  justify-content-between">What services does your real estate agency
+                    provide?
+                    <div class="arrow-down">
+                        <img src="./Assets/Chevron down.png" alt="">
+                    </div>
+                </div>
+                <div class="panel-1">
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. Tortor sed quis
+                        arcu
+                        risus sollicitudin lacus donec in commodo. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
+                    <hr>
+                </div>
+                <!-- flip-2 -->
+                <div class="d-flex flip-2  justify-content-between">
+                    How do I get started with buying or selling a property?
+                    <div class="arrow-down">
+                        <img src="./Assets/Chevron down.png" alt="">
+                    </div>
+                </div>
+                <div class="panel-2">
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. Tortor sed quis
+                        arcu
+                        risus sollicitudin lacus donec in commodo. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
+                </div>
+                <hr>
+                <!-- flip-3 -->
+                <div class="d-flex flip-3  justify-content-between">
+                    Are your agents licensed and experienced?
+                    <div class="arrow-down">
+                        <img src="./Assets/Chevron down.png" alt="">
+                    </div>
+                </div>
+                <div class="panel-3">
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. Tortor sed quis
+                        arcu
+                        risus sollicitudin lacus donec in commodo. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
+                </div>
+                <hr>
+                <!-- flip-4 -->
+                <div class="d-flex flip-4  justify-content-between">
+                    Do I need to make repairs or renovations before selling?
+                    <div class="arrow-down">
+                        <img src="./Assets/Chevron down.png" alt="">
+                    </div>
+                </div>
+                <div class="panel-4">
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. Tortor sed quis
+                        arcu
+                        risus sollicitudin lacus donec in commodo. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
+                </div>
+                <hr>
+                <!-- flip-5 -->
+                <div class="d-flex flip-5  justify-content-between">
+                    Do you offer help with relocation or moving services?
+                    <div class="arrow-down">
+                        <img src="./Assets/Chevron down.png" alt="">
+                    </div>
+                </div>
+                <div class="panel-5">
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. Tortor sed quis
+                        arcu
+                        risus sollicitudin lacus donec in commodo. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+    </section>
+    <!-- Email newletter section -->
+    <section class="email-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="email-title">Newsletter To Get Updated The Latest News</h2>
+                </div>
+                <div class="col-12 col-lg-6 email-search d-flex justify-content-lg-end gap-3">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <button class="email-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Footer section -->
+    <section class="footer-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="./Assets/nav-logoo.png" alt="" />
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Pharetra ornare aliquet
+                            nunc dui in scelerporttitor. Proin ullamcorper.
+                        </p>
+                        <div class="footer-social-link d-flex gap-4">
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/facebook.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/Twitter.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/Insta.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/youtube.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borderY">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-link">
+                        <h3>Useful Links</h3>
+                        <div class="links">
+                            <a href="#">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Properties</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-property">
+                        <h3 class="mb-3">Our Properties</h3>
+                        <div class="footer-img">
+                            <div class="row-top mb-2 d-flex gap-2">
+                                <div class="div">
+                                    <a href="#">
+                                        <img src="./Assets/footer-1.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="div">
+                                    <a href="#">
+                                        <img src="./Assets/footer-3.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-4.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-5.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row-bottom d-flex gap-2">
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-5.png" alt="" />
+                                    </a>
+
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-6.png" alt="" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-7.png" alt="" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-8.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- copyright section -->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
+                </div>
+                <div class="col-6 d-flex justify-content-end gap-4">
+                    <span>Term of Service</span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./JS/contact.js"></script>
+
+
+    <!-- Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
