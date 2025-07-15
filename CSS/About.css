@@ -112,6 +112,11 @@ nav>ul {
     display: none;
 }
 
+.nav-toggler {
+    display: none;
+}
+
+
 /* Banner secetion */
 .banner-section {
     padding: 10px 30px;
@@ -504,66 +509,80 @@ h1 {
     }
 
     /* Header section */
+    /* Header section */
     .nav-logo {
         margin-left: 0 !important;
     }
 
     .mobile-hidden,
     .nav-btn {
-        display: none;
-    }
-
-    .mobile-nav {
-        position: absolute;
-        background: #8d8dcc6b;
-        top: 91px;
-        left: 0;
-        right: 0;
-        margin: 0 30px;
-        border-radius: 100px;
-        backdrop-filter: blur(25px);
-        padding: 40px 0;
-    }
-
-    .mobile-ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .mobile-ul>li>a,
-    .mobile-ul>a {
-        color: black;
-        font-weight: 600;
+        display: none !important;
     }
 
     .nav-toggler {
-        position: relative;
-        height: 2px;
-        width: 10px;
-        background: #000;
-        margin-left: auto;
+        display: flex;
     }
 
-    .nav-toggler::before {
-        content: "";
-        position: absolute;
-        height: 2px;
-        left: 0;
-        right: 0;
-        top: 4px;
-        background: #000;
+    .nav-toggler>span {
+        display: inline-block;
+        color: black;
+        font-weight: 400;
+        font-size: 18px;
     }
 
-    .nav-toggler::after {
-        content: "";
+    .mobile-ul {
+        margin-top: 38px;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -270px;
+        width: 270px;
+        height: 100vh;
+        background: var(--primary-color);
+        padding: 30px 20px;
+        transition: right 0.3s ease;
+        z-index: 10000;
+        display: block;
+        box-shadow: 8px 0 35px #00000091;
+    }
+
+    .mobile-nav.active {
+        right: 0;
+    }
+
+    .mobile-nav a {
+        color: white;
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .cancel-btn {
+        background: none;
+        border: none;
+        color: black;
+        font-size: 24px;
+        font-weight: 800;
         position: absolute;
-        height: 2px;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
-        bottom: 4px;
-        background: #000;
+        bottom: 0;
+        z-index: 1040;
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
     }
 
     /* Banner section */
@@ -648,12 +667,6 @@ h1 {
     .nav-logo {
         width: 102px;
         height: 43.04px;
-    }
-
-    .mobile-nav {
-        top: 79px;
-        margin: 0 15px;
-        border-radius: 39px;
     }
 
 
