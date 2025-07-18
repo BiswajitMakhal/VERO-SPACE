@@ -104,7 +104,7 @@ const swiper = new Swiper('#explore-swiper', {
       slidesPerView: 3,
       spaceBetween: 0,
     },
-    1200: {
+    1225: {
       slidesPerView: 4,
       spaceBetween: 10,
     },

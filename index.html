@@ -149,7 +149,7 @@
                 <h2 class="text-center mb-5">Explore Apartment Types</h2>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-6 col-sm-3 col-lg-2 mb-2">
                     <div class="prop-card text-center">
                         <div class="prop-img">
                             <img src="./Assets/commercial.png" alt="">
@@ -158,7 +158,7 @@
                         <div class="prop-6">6 Properties</div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-6 col-sm-3 col-lg-2 mb-2">
                     <div class="prop-card text-center">
                         <div class="prop-img">
                             <img src="./Assets/Residencial (2).png" alt="">
@@ -167,7 +167,7 @@
                         <div class="prop-6">6 Properties</div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-6 col-sm-3 col-lg-2 mb-2">
                     <div class="prop-card text-center">
                         <div class="prop-img">
                             <img src="./Assets/villa.png" alt="">
@@ -176,7 +176,7 @@
                         <div class="prop-6">6 Properties</div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-2">
+                <div class="col-6 col-sm-3 col-lg-2 mb-2">
                     <div class="prop-card text-center">
                         <div class="prop-img">
                             <img src="./Assets/Apartment.png" alt="">
@@ -185,7 +185,7 @@
                         <div class="prop-6">6 Properties</div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="col-6 col-sm-3 col-lg-2 mb-2">
                     <div class="prop-card text-center">
                         <div class="prop-img">
                             <img src="./Assets/ph_warehouse-bold.png" alt="">
@@ -201,12 +201,19 @@
     <section class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="about-img">
+                <div class="col-12 col-xl-6">
+                    <div class="about-img position-relative">
+                        <img src="./Assets/about-big.png" alt="">
+                        <div class="about-small position-absolute">
+                            <img src="./Assets/about-small.png" alt="">
+                        </div>
+                    </div>
+                    <!-- for tablet screen -->
+                    <div class="about-tablet">
                         <img src="./Assets/about-merge.png" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 my-auto">
+                <div class="col-12 col-xl-6 my-auto">
                     <div class="about-content">
                         <div class="blue d-flex gap-3 align-items-center">
                             <span class="blue-line"></span>
@@ -217,37 +224,43 @@
                             moments that turn a house into a home. That’s why we’re here to support you like a trusted
                             friend, every step of the way.</p>
                         <div class=" row counter-box h-100 d-flex align-items-center">
-                            <div class="count col-6 col-sm-4  ">
-                                <div class="about-radius">
-                                    <div class="about-icon ">
-                                        <img src="./Assets/smileface.png" alt="">
+                            <div class="col-12 col-sm-4  ">
+                                <div class="count">
+                                    <div class="about-radius">
+                                        <div class="about-icon ">
+                                            <img src="./Assets/smileface.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="icon-content">
-                                    <h2 class="counter" data-target="15">0</h2> <!-- 15 K -->
-                                    <p>Trusted Customer</p>
+                                    <div class="icon-content">
+                                        <h2 class="counter" data-target="15">0</h2> <!-- 15 K -->
+                                        <p>Trusted Customer</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="count col-6 col-sm-4">
-                                <div class="about-radius">
-                                    <div class="about-icon ">
-                                        <img src="./Assets/housesold.png" alt="">
+                            <div class="col-12 col-sm-4">
+                                <div class="count">
+                                    <div class="about-radius">
+                                        <div class="about-icon ">
+                                            <img src="./Assets/housesold.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="icon-content">
-                                    <h2 class="counter" data-target="20">0</h2> <!-- 20 K -->
-                                    <p>Houses Sold</p>
+                                    <div class="icon-content">
+                                        <h2 class="counter" data-target="20">0</h2> <!-- 20 K -->
+                                        <p>Houses Sold</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="count col-6 col-sm-4">
-                                <div class="about-radius">
-                                    <div class="about-icon ">
-                                        <img src="./Assets/propertylisted.png" alt="">
+                            <div class="col-12 col-sm-4">
+                                <div class="count">
+                                    <div class="about-radius">
+                                        <div class="about-icon ">
+                                            <img src="./Assets/propertylisted.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="icon-content">
-                                    <h2 class="counter" data-target="75">0</h2> <!-- 75 K -->
-                                    <p>Property Listed</p>
+                                    <div class="icon-content">
+                                        <h2 class="counter" data-target="75">0</h2> <!-- 75 K -->
+                                        <p>Property Listed</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -280,6 +293,9 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="swiper-explore-1 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 29.png" alt="">
+                                </div>
                                 <div class="box-shadow position-absolute">
                                     <div class="explore-title d-flex gap-4">
                                         <span>Sobha Heartland Villa</span>
@@ -304,6 +320,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-explore-2 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 30.png" alt="">
+                                </div>
                                 <div class="box-shadow position-absolute">
                                     <div class="explore-title d-flex gap-4">
                                         <span>Hillside Haven</span>
@@ -328,6 +347,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-explore-3 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 31.png" alt="">
+                                </div>
                                 <div class="box-shadow position-absolute">
                                     <div class="explore-title d-flex gap-4">
                                         <span>Island Paradise Villa</span>
@@ -352,6 +374,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-explore-4 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 32.png" alt="">
+                                </div>
                                 <div class="box-shadow position-absolute">
                                     <div class="explore-title d-flex gap-4">
                                         <span>Emerald Coast Manor</span>
@@ -376,6 +401,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-explore-3 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 31.png" alt="">
+                                </div>
                                 <div class="box-shadow position-absolute">
                                     <div class="explore-title d-flex gap-4">
                                         <span>Sobha Heartland Villa</span>
@@ -417,12 +445,20 @@
                     <h2>We Make Sell Or Rent Your Property Simple and Profitable.</h2>
                     <p>We are the most respected Realestate company in the industry. We deliver extraordinary facility
                         to the customer.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Et aliquet sed nibh porttitor lacus. Sodales maecenas
+                    <p class="overlap-issue">Lorem ipsum dolor sit amet consectetur. Et aliquet sed nibh porttitor
+                        lacus. Sodales maecenas
                         aliquam dis neque posuere urna. Sodales </p>
                     <a class="submit-btn" href="./submit.html">Submit Property</a>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="service-img">
+                    <div class="service-img position-relative">
+                        <img src="./Assets/property-big.png" alt="">
+                        <div class="service-s-img position-absolute">
+                            <img src="./Assets/property-small.png" alt="">
+                        </div>
+                    </div>
+                    <!-- for tablet view -->
+                    <div class="service-tablet">
                         <img src="./Assets/Services.png" alt="">
                     </div>
                 </div>
@@ -644,20 +680,17 @@
                                         <img src="./Assets/footer-4.png" alt="" />
                                     </a>
                                 </div>
-
                                 <div>
                                     <a href="#">
                                         <img src="./Assets/footer-5.png" alt="" />
                                     </a>
                                 </div>
                             </div>
-
                             <div class="row-bottom d-flex gap-2">
                                 <div>
                                     <a href="#">
                                         <img src="./Assets/footer-5.png" alt="" />
                                     </a>
-
                                 </div>
                                 <div>
                                     <a href="#">

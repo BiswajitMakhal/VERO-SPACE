@@ -161,21 +161,11 @@ h1 {
     background: var(--primary-color);
 }
 
-.counter-box {
-    gap: 66px;
-}
-
 .blue-line {
     display: inline-block;
     height: 2px;
     width: 55px;
     background: var(--primary-color);
-}
-
-.count {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .about-img {
@@ -188,19 +178,24 @@ h1 {
     width: 100%;
 }
 
-.about-radius {
+.counter-box {
+    text-wrap: nowrap;
+}
+
+.count {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    gap: 10px;
+}
+
+.about-radius {
     border-radius: 50%;
     box-shadow: 0 6px 35px rgba(0, 0, 0, 0.115);
 }
 
 .about-icon {
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 .about-icon>img {
@@ -214,6 +209,10 @@ h1 {
     color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 3px;
+}
+
+.icon-content {
+    height: 60px;
 }
 
 /* Commitment section */
@@ -238,30 +237,19 @@ h1 {
     border-radius: 40px;
 }
 
-.swiper-explore-1 {
-    background: url(../Assets/about/team-1.png) no-repeat;
-}
-
-.swiper-explore-2 {
-    background: url(../Assets/about/team-2.png) no-repeat;
-}
-
-.swiper-explore-3 {
-    background: url(../Assets/about/team-3.png) no-repeat;
-}
-
-.swiper-explore-4 {
-    background: url(../Assets/about/team-4.png) no-repeat;
-}
-
 .swiper-explore-1,
 .swiper-explore-2,
 .swiper-explore-3,
 .swiper-explore-4 {
-    height: 350px;
-    width: 300px;
+    max-height: 350px;
+    max-width: 300px;
 }
 
+.swiper-ex-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .explore-wrapper {
     background: #F7F8FA;

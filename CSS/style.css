@@ -350,6 +350,8 @@ input[type=range]::-moz-range-thumb {
     box-shadow: 0 4px 35px rgba(0, 0, 0, 0.120);
     padding: 29px 30px;
     text-wrap: nowrap;
+    max-width: 175px;
+    margin: 0 auto;
 }
 
 .prop-img {
@@ -372,7 +374,8 @@ input[type=range]::-moz-range-thumb {
 
 /* About section */
 .about-section {
-    padding: 75px 0;
+    padding-top: 200px;
+    padding-bottom: 75px;
 }
 
 .blue-line {
@@ -382,20 +385,39 @@ input[type=range]::-moz-range-thumb {
     background: var(--primary-color);
 }
 
-.count {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .about-img {
-    max-width: 592px;
-    max-height: 616px;
+    max-width: 535px;
+    max-height: 450px;
+    margin: 0 auto;
 }
 
 .about-img>img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
+}
+
+.about-small {
+    max-width: 480px;
+    max-height: 332px;
+    top: -165px;
+    right: -65px;
+}
+
+.about-small>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.counter-box {
+    text-wrap: nowrap;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .about-radius {
@@ -425,6 +447,19 @@ input[type=range]::-moz-range-thumb {
     height: 60px;
 }
 
+/* for tablet screen */
+.about-tablet {
+    max-width: 592px;
+    max-height: 616px;
+    display: none;
+}
+
+.about-tablet>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 /* Explore section */
 .explore-section {
     padding-bottom: 100px;
@@ -450,8 +485,6 @@ input[type=range]::-moz-range-thumb {
     justify-content: center;
 }
 
-
-
 .slider-btn {
     width: auto;
 }
@@ -470,28 +503,18 @@ input[type=range]::-moz-range-thumb {
     width: 16px;
 }
 
-.swiper-explore-1 {
-    background: url(../Assets/Rectangle\ 29.png) no-repeat;
-}
-
-.swiper-explore-2 {
-    background: url(../Assets/Rectangle\ 30.png) no-repeat;
-}
-
-.swiper-explore-3 {
-    background: url(../Assets/Rectangle\ 31.png) no-repeat;
-}
-
-.swiper-explore-4 {
-    background: url(../Assets/Rectangle\ 32.png) no-repeat;
-}
-
 .swiper-explore-1,
 .swiper-explore-2,
 .swiper-explore-3,
 .swiper-explore-4 {
-    height: 350px;
-    width: 286px;
+    max-height: 350px;
+    max-width: 286px;
+}
+
+.swiper-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .box-shadow {
@@ -539,13 +562,42 @@ input[type=range]::-moz-range-thumb {
 }
 
 .service-img {
-    max-width: 571px;
-    max-height: 559px;
+    max-width: 511px;
+    max-height: 500px;
+    margin: 0 auto;
 }
 
 .service-img>img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
+}
+
+.service-s-img {
+    max-width: 266px;
+    max-height: 332px;
+    left: -74px;
+    bottom: -47px;
+}
+
+.service-s-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* For tablet view */
+.service-tablet {
+    max-width: 571px;
+    max-height: 559px;
+    display: none;
+    margin: auto;
+}
+
+.service-tablet>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* Testimonail section */
@@ -795,6 +847,16 @@ input[type=range]::-moz-range-thumb {
 
 @media screen and (max-width:1200px) {
 
+    /* Apart-section */
+    .title {
+        font-size: 16px;
+    }
+
+    /* services section */
+    .overlap-issue {
+        max-width: 420px;
+    }
+
     /* Testimonial section */
     .test-card,
     .test-card-2 {
@@ -910,7 +972,8 @@ input[type=range]::-moz-range-thumb {
     }
 
     .rent-usd,
-    .range select {
+    .range select,
+    .house-room {
         width: 100%;
     }
 
@@ -923,10 +986,16 @@ input[type=range]::-moz-range-thumb {
         width: 100%;
     }
 
-    /* About section */
-    .about-img {
-        margin: 0 auto;
+    /* Apart-section */
+    .prop-card {
+        padding: 17px 8px;
     }
+
+    .title {
+        font-size: 14px;
+    }
+
+    /* About section */
 
     .blue {
         margin-top: 15px;
@@ -950,8 +1019,12 @@ input[type=range]::-moz-range-thumb {
         flex-direction: column-reverse;
     }
 
+    .overlap-issue {
+        max-width: 100%;
+    }
+
     .service-img {
-        margin-bottom: 15px;
+        margin-bottom: 45px;
     }
 
     /* Testimonial section */
@@ -1009,6 +1082,38 @@ input[type=range]::-moz-range-thumb {
     }
 
 
+}
+
+@media screen and (max-width:768px) {
+
+    /* About section */
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .icon-content {
+        font-size: 14px;
+    }
+
+    /* for tablet screen */
+    .about-tablet {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    /* service section */
+    .service-img {
+        display: none;
+    }
+
+    /* for tablet screen */
+    .service-tablet {
+        display: block;
+    }
 }
 
 @media screen and (max-width:576px) {
