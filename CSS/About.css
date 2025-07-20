@@ -169,13 +169,41 @@ h1 {
 }
 
 .about-img {
-    max-width: 592px;
-    max-height: 616px;
+    max-width: 428px;
+    max-height: 543px;
 }
 
 .about-img>img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
+}
+
+.ex-middle {
+    max-width: 215px;
+    max-height: 124px;
+    top: 206px;
+    z-index: 1;
+    right: -43px;
+}
+
+.ex-middle>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.ex-small {
+    max-width: 262px;
+    max-height: 309px;
+    bottom: -44px;
+    right: -128px;
+}
+
+.ex-small>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .counter-box {
@@ -213,6 +241,19 @@ h1 {
 
 .icon-content {
     height: 60px;
+}
+
+/* For tablet screen */
+.ex-tablet {
+    max-width: 559px;
+    max-height: 583px;
+    display: none;
+}
+
+.ex-tablet>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* Commitment section */
@@ -476,9 +517,9 @@ h1 {
 
 @media screen and (max-width:1200px) {
 
-    /* About-section */
-    .counter-box {
-        gap: 40px;
+    /* Experience section */
+    .about-img {
+        margin: 0 auto 60px;
     }
 
     /* Footer section */
@@ -496,7 +537,6 @@ h1 {
         font-size: 25px;
     }
 
-    /* Header section */
     /* Header section */
     .nav-logo {
         margin-left: 0 !important;
@@ -578,6 +618,11 @@ h1 {
         padding: 0 40px;
     }
 
+    /* Experience section */
+    .counter {
+        font-size: 20px;
+    }
+
     /* commitment section */
     .commitment-row {
         flex-direction: column-reverse;
@@ -640,6 +685,24 @@ h1 {
     }
 
 
+}
+
+@media screen and (max-width:768px) {
+
+    /* Experience section */
+    .icon-content {
+        font-size: 14px;
+    }
+
+    /* For tablet screen */
+    .about-img {
+        display: none;
+    }
+
+    .ex-tablet {
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
 
 @media screen and (max-width:576px) {
