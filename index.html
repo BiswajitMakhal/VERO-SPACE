@@ -15,6 +15,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn my-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn my-4">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -32,7 +83,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -45,7 +96,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -56,7 +107,7 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>Perfect Platform For Buying Or <br>Renting <span class="mark">Houses, Flats, And Villas</span>
@@ -146,7 +197,7 @@
     <section class="apartment-section">
         <div class="container-2">
             <div class="apart-content">
-                <h2 class="text-center mb-5">Explore Apartment Types</h2>
+                <h2 class="text-center mb-5 color-33">Explore Apartment Types</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-6 col-sm-3 col-lg-2 mb-2">
@@ -164,7 +215,7 @@
                             <img src="./Assets/Residencial (2).png" alt="">
                         </div>
                         <div class="title fw-semibold">Residencial</div>
-                        <div class="prop-6">6 Properties</div>
+                        <div class="prop-6 light-color">6 Properties</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-2 mb-2">
@@ -173,7 +224,7 @@
                             <img src="./Assets/villa.png" alt="">
                         </div>
                         <div class="title fw-semibold">Villa</div>
-                        <div class="prop-6">6 Properties</div>
+                        <div class="prop-6 light-color">6 Properties</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-2 mb-2">
@@ -182,7 +233,7 @@
                             <img src="./Assets/Apartment.png" alt="">
                         </div>
                         <div class="title fw-semibold">Apartment</div>
-                        <div class="prop-6">6 Properties</div>
+                        <div class="prop-6 light-color">6 Properties</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-2 mb-2">
@@ -191,7 +242,7 @@
                             <img src="./Assets/ph_warehouse-bold.png" alt="">
                         </div>
                         <div class="title fw-semibold">Warehouse</div>
-                        <div class="prop-6">6 Properties</div>
+                        <div class="prop-6 light-color">6 Properties</div>
                     </div>
                 </div>
             </div>
@@ -217,10 +268,11 @@
                     <div class="about-content">
                         <div class="blue d-flex gap-3 align-items-center">
                             <span class="blue-line"></span>
-                            <span class="title">About Us </span>
+                            <span class="title color-3d">About Us </span>
                         </div>
-                        <h2>Welcome To VeroSpace, Your Trusted Real Estate Expert.</h2>
-                        <p>We believe real estate is more than transactions—it’s about people, relationships, and the
+                        <h2 class="color-33">Welcome To VeroSpace, Your Trusted Real Estate Expert.</h2>
+                        <p class="light-color">We believe real estate is more than transactions—it’s about people,
+                            relationships, and the
                             moments that turn a house into a home. That’s why we’re here to support you like a trusted
                             friend, every step of the way.</p>
                         <div class=" row counter-box h-100 d-flex align-items-center">
@@ -251,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="count">
+                                <div class="count m-0">
                                     <div class="about-radius">
                                         <div class="about-icon ">
                                             <img src="./Assets/propertylisted.png" alt="">
@@ -276,14 +328,14 @@
             <div class="container">
                 <div class="blue d-flex gap-3 align-items-center justify-content-md-start justify-content-center">
                     <span class="blue-line"></span>
-                    <span class="title">Recently Added</span>
+                    <span class="title color-3d">Recently Added</span>
                 </div>
                 <div class="row justify-content-center justify-content-md-between">
-                    <div class="col-12 col-md-6 fw-semibold text-center text-md-start">
+                    <div class="col-12 col-md-6 fw-semibold text-center text-md-start color-33">
                         <h2>Explore Our Newly Listed Properties</h2>
                     </div>
                     <div class="col-12 col-md-6 slider-btn">
-                        <a href="">All Listing</a>
+                        <a href="./property.html">All Listing</a>
                     </div>
                 </div>
                 <!-- Slider main container -->
@@ -652,10 +704,10 @@
                     <div class="footer-link">
                         <h3>Useful Links</h3>
                         <div class="links">
-                            <a href="#">Home</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Properties</a>
-                            <a href="#">Contact Us</a>
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./property.html">Properties</a>
+                            <a href="./contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -719,10 +771,10 @@
     <section class="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 light-color">
                     <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
                 </div>
-                <div class="col-6 d-flex justify-content-end gap-4">
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
                     <span>Term of Service</span>
                     <span>Privacy Policy</span>
                 </div>

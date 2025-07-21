@@ -17,6 +17,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn my-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn my-4">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -34,7 +85,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -47,7 +98,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -58,30 +109,32 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>Contact Us</h1>
-                    <span>Home</span>
+                    <a href="./index.html">Home</a>
                     <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
-                    <span>About us</span>
+                    <a href="./contact.html">Contact us</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- git in touch section -->
+    <!-- get in touch section -->
     <section class="touch-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="blue d-flex gap-3 align-items-center">
                         <span class="blue-line"></span>
-                        <span class="title">Get In Touch</span>
+                        <span class="title color-3d">Get In Touch</span>
                     </div>
-                    <div class="h1">
+                    <div class="h1 color-33">
                         How We Can Help You?
                     </div>
-                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur. Turpis faucibus nulla vestibulum dolor.
+                    <p class=" max-p light-color">Lorem ipsum dolor sit amet consectetur. Turpis faucibus nulla
+                        vestibulum
+                        dolor.
                         Dictum.</p>
                     <hr>
                     <div class="address d-flex gap-4">
@@ -90,7 +143,7 @@
                         </div>
                         <div>
                             <h4>Our Address</h4>
-                            <p>2690 Hiltona Street Victoria
+                            <p class="light-color">2690 Hiltona Street Victoria
                                 Road, New York, Canada</p>
                         </div>
                     </div>
@@ -100,7 +153,7 @@
                         </div>
                         <div>
                             <h4>Phone Number</h4>
-                            <p>+01 09 256 2569</p>
+                            <p class="light-color">+01 09 256 2569</p>
                         </div>
                     </div>
                     <div class="email-addr d-flex gap-4">
@@ -109,7 +162,7 @@
                         </div>
                         <div>
                             <h4>Email Address</h4>
-                            <p>support24@verospace.com</p>
+                            <p class="light-color">support24@verospace.com</p>
                         </div>
                     </div>
                 </div>
@@ -177,8 +230,8 @@
                         arcu
                         risus sollicitudin lacus donec in commodo. </p>
                     <p>Lorem ipsum dolor sit amet consectetur. Et eget massa sed gravida velit in nibh. </p>
-                    <hr>
                 </div>
+                <hr>
                 <!-- flip-2 -->
                 <div class="d-flex flip-2  justify-content-between">
                     How do I get started with buying or selling a property?
@@ -298,10 +351,10 @@
                     <div class="footer-link">
                         <h3>Useful Links</h3>
                         <div class="links">
-                            <a href="#">Home</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Properties</a>
-                            <a href="#">Contact Us</a>
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./property.html">Properties</a>
+                            <a href="./contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -368,10 +421,10 @@
     <section class="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 light-color">
                     <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
                 </div>
-                <div class="col-6 d-flex justify-content-end gap-4">
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
                     <span>Term of Service</span>
                     <span>Privacy Policy</span>
                 </div>

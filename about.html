@@ -18,6 +18,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn my-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn my-4">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -35,7 +86,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -48,7 +99,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -59,13 +110,13 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>About Us</h1>
-                    <span>Home</span>
+                    <a href="./index.html">Home</a>
                     <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
-                    <span>About us</span>
+                    <a href="./about.html">About us</a>
                 </div>
             </div>
         </div>
@@ -93,10 +144,11 @@
                     <div class="about-content">
                         <div class="blue d-flex gap-3 align-items-center">
                             <span class="blue-line"></span>
-                            <span class="title">Who We Are</span>
+                            <span class="title color-3d">Who We Are</span>
                         </div>
                         <h2>The Real Estate Company You Can Trust To Keep It Real</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac massa sed. Dignissim
+                        <p class="light-color">Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac
+                            massa sed. Dignissim
                             cursus
                             mattis lectus nunc tempus adipiscing nulla a justo. Orci ut maecenas varius dui volutpat
                         </p>
@@ -105,10 +157,10 @@
                                 <span></span>
                             </div>
                             <div class="exp-content">
-                                <div class="ex-title">
+                                <div class="ex-title color-33">
                                     15 Years Of Experince
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur. </p>
+                                <p class="light-color">Lorem ipsum dolor sit amet consectetur. </p>
                             </div>
                         </div>
                         <div class=" row counter-box h-100 d-flex align-items-center">
@@ -167,24 +219,27 @@
                         <span class="blue-line"></span>
                         <span class="title">Our Commitment</span>
                     </div>
-                    <h2>Because a Home Can Change Everything</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac massa sed. Dignissim cursus
+                    <h2 class="color-33">Because a Home Can Change Everything</h2>
+                    <p class="light-color">Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac massa
+                        sed. Dignissim cursus
                         mattis lectus nunc.</p>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <div class="title-1">
                                 Our Vision
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac massa sed.
+                            <p class="light-color">Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac
+                                massa sed.
                                 Dignissim
                                 cursus
                                 mattis.</p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <div class="title-1">
                                 Our Mission
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac massa sed.
+                            <p class="light-color">Lorem ipsum dolor sit amet consectetur. At ut aliquam tempor risus ac
+                                massa sed.
                                 Dignissim
                                 cursus
                                 mattis.</p>
@@ -205,9 +260,9 @@
             <div class="container">
                 <div class="blue d-flex gap-3 align-items-center justify-content-center">
                     <span class="blue-line"></span>
-                    <span class="title">Professional Experts</span>
+                    <span class="title color-3d">Professional Experts</span>
                 </div>
-                <div class=" fw-semibold text-center">
+                <div class=" fw-semibold text-center color-33">
                     <h2>Meet Our Real Estate Team</h2>
                 </div>
                 <!-- Slider main container -->
@@ -317,7 +372,7 @@
     <section class="company-section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
         <div class="container">
             <div class="row">
-                <p class="company-head">Trusted by 200+ Companies</p>
+                <p class="company-head color-3d">Trusted by 200+ Companies</p>
                 <div class="carousel-container">
                     <div class="carousel-track">
                         <div class="company-rotate">
@@ -365,7 +420,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h2 class="email-title">Newsletter To Get Updated The Latest News</h2>
+                    <h2 class="email-title color-33">Newsletter To Get Updated The Latest News</h2>
                 </div>
                 <div class="col-12 col-lg-6 email-search d-flex justify-content-lg-end gap-3">
                     <input type="email" name="email" id="email" placeholder="Enter Your Email">
@@ -419,10 +474,10 @@
                     <div class="footer-link">
                         <h3>Useful Links</h3>
                         <div class="links">
-                            <a href="#">Home</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Properties</a>
-                            <a href="#">Contact Us</a>
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./property.html">Properties</a>
+                            <a href="./contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -489,10 +544,10 @@
     <section class="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 light-color">
                     <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
                 </div>
-                <div class="col-6 d-flex justify-content-end gap-4">
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
                     <span>Term of Service</span>
                     <span>Privacy Policy</span>
                 </div>

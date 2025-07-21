@@ -17,6 +17,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn my-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn my-4">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -34,7 +85,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -47,7 +98,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -58,13 +109,13 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>Properties</h1>
-                    <span>Home</span>
+                    <a href="./index.html">Home</a>
                     <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
-                    <span>Submit Property</span>
+                    <a href="./submit.html">Submit Property</a>
                 </div>
             </div>
         </div>
@@ -219,17 +270,17 @@
         </div>
     </section>
     <!-- property section -->
-    <section>
+    <section class="property-section">
         <div class="container">
-            <div class="blue d-flex gap-3 align-items-center">
+            <div class="blue d-flex gap-3 align-items-center justify-content-center">
                 <span class="blue-line"></span>
                 <span class="title">How It Work</span>
             </div>
-            <h2>How To Sell Or Rent Your Property</h2>
+            <h2 class="text-center mt-3 mb-5">How To Sell Or Rent Your Property</h2>
             <div class="row laptop-screen">
                 <div class=" col-4 card-top card-c">
                     <div class="card-c-img">
-                        <img src="" alt="">
+                        <img src="./Assets/rent-1.png" alt="">
                     </div>
                     <h4>Connect With Client</h4>
                     <p>Lorem ipsum dolor sit amet consectetur. </p>
@@ -244,9 +295,9 @@
                     </div>
                     <div class="card-c card-first">
                         <div class="card-c-img">
-                            <img src="" alt="">
+                            <img src="./Assets/rent-2.png" alt="">
                         </div>
-                        <h4>Connect With Client</h4>
+                        <h4>Post Your Property</h4>
                         <p>Lorem ipsum dolor sit amet consectetur. </p>
                     </div>
                 </div>
@@ -261,9 +312,9 @@
                     </div>
                     <div class="card-c card-third">
                         <div class="card-c-img">
-                            <img src="" alt="">
+                            <img src="./Assets/rent-3.png" alt="">
                         </div>
-                        <h4>Connect With Client</h4>
+                        <h4>Close The Deal</h4>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
@@ -280,7 +331,7 @@
                         </div>
                         <div class="card-c ms-4 card-third">
                             <div class="card-c-img">
-                                <img src="" alt="">
+                                <img src="./Assets/rent-1.png" alt="">
                             </div>
                             <h4>Connect With Client</h4>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -292,7 +343,7 @@
                         </div>
                         <div class="card-c ms-4 card-third">
                             <div class="card-c-img">
-                                <img src="" alt="">
+                                <img src="./Assets/rent-2.png" alt="">
                             </div>
                             <h4>Connect With Client</h4>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -304,7 +355,7 @@
                         </div>
                         <div class="card-c ms-4 card-third">
                             <div class="card-c-img">
-                                <img src="" alt="">
+                                <img src="./Assets/rent-3.png" alt="">
                             </div>
                             <h4>Connect With Client</h4>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -373,10 +424,10 @@
                     <div class="footer-link">
                         <h3>Useful Links</h3>
                         <div class="links">
-                            <a href="#">Home</a>
-                            <a href="#">About Us</a>
-                            <a href="#">Properties</a>
-                            <a href="#">Contact Us</a>
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./property.html">Properties</a>
+                            <a href="./contact.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -440,10 +491,10 @@
     <section class="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 light-color">
                     <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
                 </div>
-                <div class="col-6 d-flex justify-content-end gap-4">
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
                     <span>Term of Service</span>
                     <span>Privacy Policy</span>
                 </div>

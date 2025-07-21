@@ -15,6 +15,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn mb-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -32,7 +83,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -45,7 +96,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -56,13 +107,13 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>Properties</h1>
-                    <span>Home</span>
+                    <a href="./index.html">Home</a>
                     <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
-                    <span>About us</span>
+                    <a href="./prop-details.html">Property Detail</a>
                 </div>
             </div>
         </div>
@@ -130,15 +181,17 @@
                         <div class="location-img">
                             <img src="./Assets/location.png" alt="">
                         </div>
-                        <div class="title">
+                        <div class="title color-3d">
                             Musterstrase 17, 10117 Berlin, Germany
                         </div>
                     </div>
-                    <h2 class="text-center text-lg-start">Sobha Heartland Villa</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Ac scelerisque mauris enim ut massa turpis donec sem
+                    <h2 class="text-center text-lg-start color-33">Sobha Heartland Villa</h2>
+                    <p class="light-color">Lorem ipsum dolor sit amet consectetur. Ac scelerisque mauris enim ut massa
+                        turpis donec sem
                         ac. Vulputate tortor turpis turpis sit nulla ut vel ipsum. Enim sed eu aliquam donec
                     </p>
-                    <p>ullamcorper massa nec aliquet malesuada risus. Eget vitae felis faucibus proin morbi sed.
+                    <p class="light-color">ullamcorper massa nec aliquet malesuada risus. Eget vitae felis faucibus
+                        proin morbi sed.
                         Vitae posuere dolor eget vestibulum</p>
                 </div>
                 <div class="col-lg-6">
@@ -165,7 +218,7 @@
     <section class="flor-plan-section">
         <div class="container">
             <div class="row">
-                <div class="col-6 border-right">
+                <div class="col-lg-6 border-right">
                     <figure class="flor-img">
                         <figcaption>
                             <h3>Floor Plan</h3>
@@ -173,79 +226,437 @@
                         <img src="./Assets/flor-plan.png" alt="">
                     </figure>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Parking Lot</label>
+                                <input class="form-check-input" id="a" type="checkbox" checked>
+                                <label for="a" class="form-check-label">Parking Lot</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Wi-Fi</label>
+                                <input class="form-check-input" id="b" type="checkbox" checked>
+                                <label for="b" class="form-check-label">Wi-Fi</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Gym</label>
+                                <input class="form-check-input" id="c" type="checkbox" checked>
+                                <label for="c" class="form-check-label">Gym</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Parking Lot</label>
+                                <input class="form-check-input" id="d" type="checkbox">
+                                <label for="d" class="form-check-label">Parking Lot</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Wi-Fi</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Balcony</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Ocean View</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Near Hospital</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Balcony</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Ocean View</label>
+                                <input class="form-check-input" id="e" type="checkbox">
+                                <label for="e" class="form-check-label">Wi-Fi</label>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Lawn</label>
+                                <input class="form-check-input" id="f-l-name" type="checkbox" checked>
+                                <label for="f-l-name" class="form-check-label">Balcony</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Fireplace</label>
+                                <input class="form-check-input" id="g" type="checkbox">
+                                <label for="g" class="form-check-label">Ocean View</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">Laundry</label>
+                                <input class="form-check-input" id="h" type="checkbox" checked>
+                                <label for="h" class="form-check-label">Near Hospital</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Lawn</label>
+                                <input class="form-check-input" id="i" type="checkbox">
+                                <label for="i" class="form-check-label">Balcony</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="f">
-                                <label for="f" class="form-check-label">Fireplace</label>
+                                <input class="form-check-input" id="j" type="checkbox">
+                                <label for="j" class="form-check-label">Ocean View</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" id="k" type="checkbox">
+                                <label for="k" class="form-check-label">Lawn</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="l" type="checkbox" checked>
+                                <label for="l" class="form-check-label">Fireplace</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="m" type="checkbox" checked>
+                                <label for="m" class="form-check-label">Laundry</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="n" type="checkbox">
+                                <label for="n" class="form-check-label">Lawn</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" id="o" type="checkbox" id="f">
+                                <label for="o" class="form-check-label">Fireplace</label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 touch">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="name">First Name</label>
+                                <input type="text" name="name" id="name" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="last">Last Name</label>
+                                <input type="text" name="last" id="last" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="phone">Phone </label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="email-2">Email</label>
+                                <input type="email" name="email-2" id="email-2" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="d-flex flex-column gap-3">
+                                <label for="message">Massage</label>
+                                <textarea name="message" id="message" placeholder="Massage" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="submit-btn">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 my-auto contact-right">
+                    <div class="blue d-flex gap-3 align-items-center">
+                        <span class="blue-line"></span>
+                        <span class="title color-3d">Request a Showing</span>
+                    </div>
+                    <h2 class="max">Do You Want To Visit This Property</h2>
+                    <p class="light-color">Lorem ipsum dolor sit amet consectetur. Ac scelerisque mauris enim ut massa
+                        turpis donec sem ac.
+                        Vulputate tortor turpis turpis sit nulla ut vel ipsum. Enim sed eu aliquam donec
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Explore section -->
+    <section class="explore-section" id="explore-section">
+        <div class="explore-wrapper">
+            <div class="container">
+                <div class="blue d-flex gap-3 align-items-center justify-content-md-start justify-content-center">
+                    <span class="blue-line"></span>
+                    <span class="title color-3d">Similar Properties</span>
+                </div>
+                <div class="row justify-content-center justify-content-md-between">
+                    <div class="col-12 col-md-6 fw-semibold text-center text-md-start">
+                        <h2 class="color-33">Explore More Our Listings</h2>
+                    </div>
+                    <div class="col-12 col-md-6 slider-btn">
+                        <a href="./property.html">All Listing</a>
+                    </div>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper" id="explore-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper mt-5">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-1 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/propertycard-6.png" alt="">
+                                </div>
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title mb-4 d-flex gap-4 justify-content-between">
+                                        <span>Little Acom</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Berlin, Germany</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-2 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 30.png" alt="">
+                                </div>
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4 justify-content-between">
+                                        <span>Hillside Haven</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex mt-4">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Genoa, Italy </span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-3 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 31.png" alt="">
+                                </div>
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4 justify-content-between">
+                                        <span>Island Paradise Villa</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Paris, France</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-4 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 32.png" alt="">
+                                </div>
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4 justify-content-between">
+                                        <span>Emerald Coast Manor</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Lyon, France</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-explore-3 position-relative">
+                                <div class="swiper-img">
+                                    <img src="./Assets/Rectangle 31.png" alt="">
+                                </div>
+                                <div class="box-shadow position-absolute">
+                                    <div class="explore-title d-flex gap-4 justify-content-between">
+                                        <span>Sobha Heartland Villa</span>
+                                        <div class="rating-1 d-flex gap-1">
+                                            <div class="rating">
+                                                <img src="./Assets/material-symbols_star-rounded.png" alt="">
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="explore-location d-flex">
+                                        <div class="location-1 d-flex gap-1">
+                                            <div class="location">
+                                                <img src="./Assets/fluent_location-16-filled.png" alt="">
+                                            </div>
+                                            <span>Berlin, Germany</span>
+                                        </div>
+                                        <a class="details-btn" href="">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Email newletter section -->
+    <section class="email-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="email-title">Newsletter To Get Updated The Latest News</h2>
+                </div>
+                <div class="col-12 col-lg-6 email-search d-flex justify-content-lg-end gap-3">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <button class="email-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Footer section -->
+    <section class="footer-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="./Assets/nav-logoo.png" alt="" />
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Pharetra ornare aliquet
+                            nunc dui in scelerporttitor. Proin ullamcorper.
+                        </p>
+                        <div class="footer-social-link d-flex gap-4">
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/facebook.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/Twitter.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/Insta.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">
+                                    <img src="./Assets/youtube.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="borderY">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-link">
+                        <h3>Useful Links</h3>
+                        <div class="links">
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Us</a>
+                            <a href="./property.html">Properties</a>
+                            <a href="./contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="footer-property">
+                        <h3 class="mb-3">Our Properties</h3>
+                        <div class="footer-img">
+                            <div class="row-top mb-2 d-flex gap-2">
+                                <div class="div">
+                                    <a href="#">
+                                        <img src="./Assets/footer-1.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="div">
+                                    <a href="#">
+                                        <img src="./Assets/footer-3.png" alt="" />
+                                    </a>
+                                </div>
 
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-4.png" alt="" />
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-5.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row-bottom d-flex gap-2">
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-5.png" alt="" />
+                                    </a>
+
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-6.png" alt="" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-7.png" alt="" />
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="./Assets/footer-8.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- copyright section -->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 light-color">
+                    <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
+                </div>
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
+                    <span>Term of Service</span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+        </div>
     </section>
 
 

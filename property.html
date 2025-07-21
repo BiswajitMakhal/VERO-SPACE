@@ -16,6 +16,57 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------------   MODAL PAGE---------------------------------------------------- -->
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <form id="loginForm">
+                <h4>User Login</h4>
+                <p class="light-color">Hey, enter your detail to get login<br>to your account</p>
+                <input class="username" type="text" placeholder="username" required>
+                <input class="password" type="password" placeholder="password" required>
+                <div class="text-right text-end">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="submit-btn my-4">Login</button>
+                <p class="bottom-text light-color">You don’t have an account? <a href="#"
+                        id="openRegisterFromLogin">Create an
+                        account</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <form id="registerForm">
+                <h4 class="title">Create an Account</h4>
+                <p class="light-color">Fill up details below to get register</p>
+
+                <div class="input-group f-l-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="input-group p-e-contact ">
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <input class="psword" type="password" placeholder="Password" required>
+                <input class="c-psword" type="password" placeholder="Confirm password" required>
+
+                <div class="checkbox check-font text-center d-flex align-items-center justify-content-center">
+                    <input type="checkbox" id="terms" required>
+                    <label class="terms light-color" for="terms">By create an account accept our <a href="#">Term &
+                            Condition</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn my-4">Register</button>
+            </form>
+        </div>
+    </div>
     <!-- Header section -->
     <header>
         <div class="container">
@@ -33,7 +84,7 @@
                     </div>
                     <div class="nav-btn ms-auto">
                         <a href="./contact.html">Contact us</a>
-                        <a href="">Login</a>
+                        <button class="open-modal-btn" id="openLogin">Login</button>
                     </div>
                     <div class="nav-toggler" id="nav-toggler">
                         <span>☰</span>
@@ -46,7 +97,7 @@
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./property.html">Properties</a></li>
                             <a href="./contact.html">Contact us</a>
-                            <a href="">Login</a>
+                            <button class="open-modal-btn2" id="openLogin-2">Login</button>
                         </div>
                     </div>
                     <!-- Overlay for mobile nav -->
@@ -57,13 +108,13 @@
     </header>
     <!-- Banner section -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
                     <h1>Properties</h1>
-                    <span>Home</span>
+                    <a href="./index.html">Home</a>
                     <img src="./Assets/about/mdi_arrow-right-thin.png" alt="">
-                    <span>About us</span>
+                    <a href="./property.html">Properties</a>
                 </div>
             </div>
         </div>
@@ -155,6 +206,7 @@
                             <label class="form-label">Country</label>
                             <select class="form-select">
                                 <option selected>India</option>
+                                <option selected>Usa</option>
                             </select>
                         </div>
 
@@ -163,6 +215,7 @@
                             <label class="form-label">City</label>
                             <select class="form-select">
                                 <option selected>Gurgaon</option>
+                                <option selected>Kolkata</option>
                             </select>
                         </div>
 
@@ -171,6 +224,7 @@
                             <label class="form-label">Property Category</label>
                             <select class="form-select">
                                 <option selected>Apartment</option>
+                                <option selected>Villa</option>
                             </select>
                         </div>
 
@@ -363,6 +417,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <!-- FOR 992PX ONLY -->
@@ -466,6 +522,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="col-12 col-lg-9">
                     <!-- property card 1 -->
@@ -492,9 +550,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 4 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 3 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bed.png" alt="">
+                                    <figcaption>4 Bed</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bath.png" alt="">
+                                    <figcaption> 3 Bath</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/about/square.png" alt="">
+                                    <figcaption>1500 sqft</figcaption>
+                                </figure>
                             </div>
 
                             <div class="footer">
@@ -523,9 +590,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 3 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 2 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bed.png" alt="">
+                                    <figcaption>3 Bed</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bath.png" alt="">
+                                    <figcaption> 2 Bath</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/about/square.png" alt="">
+                                    <figcaption>900 sqft</figcaption>
+                                </figure>
                             </div>
 
                             <div class="footer">
@@ -563,9 +639,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 4 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 3 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bed.png" alt="">
+                                    <figcaption>4 Bed</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bath.png" alt="">
+                                    <figcaption> 3 Bath</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/about/square.png" alt="">
+                                    <figcaption>1500 sqft</figcaption>
+                                </figure>
                             </div>
 
                             <div class="footer">
@@ -594,9 +679,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 2 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 2 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bed.png" alt="">
+                                    <figcaption>2 Bed</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bath.png" alt="">
+                                    <figcaption> 2 Bath</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/about/square.png" alt="">
+                                    <figcaption>900 sqft</figcaption>
+                                </figure>
                             </div>
 
                             <div class="footer">
@@ -633,9 +727,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 5 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 4 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <div>
+                                    <img src="./Assets/bed.png" alt="">
+                                    3 Bed
+                                </div>
+                                <div>
+                                    <img src="./Assets/bath.png" alt="">
+                                    2 Bath
+                                </div>
+                                <div>
+                                    <img src="./Assets/about/square.png" alt="">
+                                    1000 sqft
+                                </div>
                             </div>
 
                             <div class="footer">
@@ -664,9 +767,18 @@
                             </div>
 
                             <div class="icons">
-                                <div><i class="fa-solid fa-bed"></i> 3 Bed</div>
-                                <div><i class="fa-solid fa-bath"></i> 2 Bath</div>
-                                <div><i class="fa-regular fa-square"></i> 1500 sqft</div>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bed.png" alt="">
+                                    <figcaption>4 Bed</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/bath.png" alt="">
+                                    <figcaption> 3 Bath</figcaption>
+                                </figure>
+                                <figure class="d-flex gap-2 align-items-center">
+                                    <img src="./Assets/about/square.png" alt="">
+                                    <figcaption>1500 sqft</figcaption>
+                                </figure>
                             </div>
 
                             <div class="footer">
@@ -687,7 +799,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h2 class="email-title">Newsletter To Get Updated The Latest News</h2>
+                    <h2 class="email-title color-33">Newsletter To Get Updated The Latest News</h2>
                 </div>
                 <div class="col-12 col-lg-6 email-search d-flex justify-content-lg-end gap-3">
                     <input type="email" name="email" id="email" placeholder="Enter Your Email">
@@ -811,10 +923,10 @@
     <section class="copyright-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 light-color">
                     <span>Copyright &copy; 2024 VeroSpace, All rights reserved</span>
                 </div>
-                <div class="col-6 d-flex justify-content-end gap-4">
+                <div class="col-6 d-flex justify-content-end gap-4 light-color">
                     <span>Term of Service</span>
                     <span>Privacy Policy</span>
                 </div>
