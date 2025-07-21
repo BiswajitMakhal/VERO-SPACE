@@ -791,6 +791,11 @@ h1 {
         font-size: 20px;
     }
 
+    /* Companies section */
+    .carousel-track {
+        animation: scroll 4s linear infinite;
+    }
+
     /* Email section */
     .email-title {
         margin: 0 auto;
