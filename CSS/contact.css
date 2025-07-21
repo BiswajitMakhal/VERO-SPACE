@@ -804,7 +804,11 @@ h1 {
 
     /* Banner section */
     .banner-section {
-        padding: 8px 14px;
+        padding: 8px;
+    }
+
+    .banner-wrapper {
+        border-radius: 18px;
     }
 
 
