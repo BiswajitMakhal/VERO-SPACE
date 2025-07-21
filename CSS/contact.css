@@ -424,6 +424,14 @@ h1 {
     max-width: 650px;
 }
 
+.flip-1,
+.flip-2,
+.flip-3,
+.flip-4,
+.flip-5 {
+    color: #333333;
+}
+
 .panel-1,
 .panel-2,
 .panel-3,
@@ -431,6 +439,18 @@ h1 {
 .panel-5 {
     display: none;
     padding: 8px;
+    color: #666666;
+}
+
+.arrow-down {
+    height: 30px;
+    width: 30px;
+}
+
+.arrow-down>img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* Email newsletter section */
@@ -852,6 +872,11 @@ h1 {
     .panel-4,
     .panel-5 {
         font-size: 12px;
+    }
+
+    .arrow-down {
+        height: 20px;
+        width: 20px;
     }
 
     /* Copyright section */
