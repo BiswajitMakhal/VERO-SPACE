@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -371,6 +371,7 @@ h1 {
     border: none;
     border-radius: 60px;
     padding: 14px 20px;
+    font-family: "Lato", sans-serif;
 }
 
 .upload-box-1 {
@@ -387,6 +388,7 @@ h1 {
 
 .upload-demo {
     min-width: 200px;
+    font-family: "Lato", sans-serif;
 }
 
 .upload-demo>span {
@@ -466,6 +468,11 @@ h1 {
 
 .circle>h4 {
     margin: 0;
+}
+
+.laptop-screen .light-color,
+.tablet-screen .light-color {
+    font-size: 14px;
 }
 
 /* For tablet screen */
@@ -590,6 +597,15 @@ h1 {
 @media screen and (max-width:1200px) {
 
     /* * CONTACT DETAILS SECTION */
+    .form-control {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .form-control .form-select {
+        font-size: 14px;
+    }
+
     .left-column,
     .right-column {
         padding: 15px;

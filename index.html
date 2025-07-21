@@ -10,6 +10,8 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- Swiper cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Aos cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- custom css --->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -110,7 +112,8 @@
         <div class="banner-wrapper">
             <div class="container">
                 <div class="banner-content">
-                    <h1>Perfect Platform For Buying Or <br>Renting <span class="mark">Houses, Flats, And Villas</span>
+                    <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Perfect Platform For
+                        Buying Or <br>Renting <span class="mark">Houses, Flats, And Villas</span>
                     </h1>
                     <span>Search thousands of homes. Find the one that fits you.</span>
                 </div>
@@ -252,7 +255,7 @@
     <section class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xl-6">
+                <div class="col-12 col-xl-6" data-aos="fade-right">
                     <div class="about-img position-relative">
                         <img src="./Assets/about-big.png" alt="">
                         <div class="about-small position-absolute">
@@ -260,11 +263,11 @@
                         </div>
                     </div>
                     <!-- for tablet screen -->
-                    <div class="about-tablet">
+                    <div class="about-tablet" data-aos="fade-right">
                         <img src="./Assets/about-merge.png" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-xl-6 my-auto">
+                <div class="col-12 col-xl-6 my-auto" data-aos="fade-left">
                     <div class="about-content">
                         <div class="blue d-flex gap-3 align-items-center">
                             <span class="blue-line"></span>
@@ -343,7 +346,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper mt-5">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-up">
                             <div class="swiper-explore-1 position-relative">
                                 <div class="swiper-img">
                                     <img src="./Assets/Rectangle 29.png" alt="">
@@ -370,7 +373,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-down">
                             <div class="swiper-explore-2 position-relative">
                                 <div class="swiper-img">
                                     <img src="./Assets/Rectangle 30.png" alt="">
@@ -397,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-up">
                             <div class="swiper-explore-3 position-relative">
                                 <div class="swiper-img">
                                     <img src="./Assets/Rectangle 31.png" alt="">
@@ -424,7 +427,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-down">
                             <div class="swiper-explore-4 position-relative">
                                 <div class="swiper-img">
                                     <img src="./Assets/Rectangle 32.png" alt="">
@@ -451,7 +454,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" data-aos="fade-up">
                             <div class="swiper-explore-3 position-relative">
                                 <div class="swiper-img">
                                     <img src="./Assets/Rectangle 31.png" alt="">
@@ -489,7 +492,7 @@
     <section class="services-section" id="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="fade-right">
                     <div class="blue d-flex gap-3 align-items-center">
                         <span class="blue-line"></span>
                         <span class="title">Other Service</span>
@@ -502,7 +505,7 @@
                         aliquam dis neque posuere urna. Sodales </p>
                     <a class="submit-btn" href="./submit.html">Submit Property</a>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="fade-left">
                     <div class="service-img position-relative">
                         <img src="./Assets/property-big.png" alt="">
                         <div class="service-s-img position-absolute">
@@ -532,7 +535,7 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="test-card">
+                            <div class="test-card" data-aos="fade-right">
                                 <div class="test-content">
                                     <p>Lorem ipsum dolor sit amet consec. Mauris a vitae commodo neque viverra elementum
                                         quam turpis morbi. suspendisse orci tristique leo sit eu nunc. </p>
@@ -552,7 +555,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="test-card-2">
+                            <div class="test-card-2" data-aos="fade-left">
                                 <div class="test-content">
                                     <p>Lorem ipsum dolor sit amet consec. Mauris a vitae commodo neque viverra elementum
                                         quam turpis morbi. suspendisse orci tristique leo sit eu nunc. </p>
@@ -572,7 +575,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="test-card">
+                            <div class="test-card" data-aos="fade-right">
                                 <div class="test-content">
                                     <p>Lorem ipsum dolor sit amet consec. Mauris a vitae commodo neque viverra elementum
                                         quam turpis morbi. suspendisse orci tristique leo sit eu nunc. </p>
@@ -599,44 +602,44 @@
         </div>
     </section>
     <!-- Companies section -->
-    <section class="company-section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+    <section class="company-section">
         <div class="container">
             <div class="row">
-                <p class="company-head">Trusted by 200+ Companies</p>
+                <p class="company-head" data-aos="fade-up">Trusted by 200+ Companies</p>
                 <div class="carousel-container">
                     <div class="carousel-track">
                         <div class="company-rotate">
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 191.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 190.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 187.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 192.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 189.png" alt="" />
                             </div>
                         </div>
                         <!-- duplicate -->
                         <div class="company-rotate">
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 191.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 190.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 187.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 192.png" alt="" />
                             </div>
-                            <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="logo-item">
                                 <img src="./Assets/image 189.png" alt="" />
                             </div>
                         </div>
@@ -661,7 +664,7 @@
     </section>
     <hr>
     <!-- Footer section -->
-    <section class="footer-section" data-aos="fade-up" data-aos-duration="1000">
+    <section class="footer-section" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 d-flex justify-content-center">
@@ -781,7 +784,8 @@
             </div>
         </div>
     </section>
-
+    <!-- Aos cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Jquery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Swiper cdn -->

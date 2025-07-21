@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+    overflow-x: hidden;
 }
 
 /* Common classes */
@@ -678,6 +683,7 @@ input[type=range]::-moz-range-thumb {
 .explore-location {
     gap: 25px;
     justify-content: space-between;
+    font-family: "Lato", sans-serif;
 }
 
 .details-btn {
@@ -977,6 +983,8 @@ input[type=range]::-moz-range-thumb {
 
 
 @media screen and (max-width:1400px) {
+
+    /* Testimonial section */
     .test-content {
         left: 228px;
     }
@@ -1435,7 +1443,7 @@ input[type=range]::-moz-range-thumb {
     .test-content {
         width: 230px;
         padding: 9px;
-        left: 44px;
+        left: 38px;
     }
 
     .test-content>p {

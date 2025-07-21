@@ -1,3 +1,6 @@
+
+// Aos cdn//
+AOS.init();
 //------------------------------- MODAL PAGE--------------------------------------------// 
 const loginModal = document.getElementById("loginModal");
 const registerModal = document.getElementById("registerModal");
