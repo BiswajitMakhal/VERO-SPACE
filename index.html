@@ -123,77 +123,79 @@
     <!-- Range section -->
     <section class="range-section">
         <div class="container">
-            <div class="range-box">
-                <div class="rent-usd">
-                    <div class="range mb-1">
-                        <figure class="dollar-sign">
-                            <img src="./Assets/dollar-sign 1.png" alt="">
-                        </figure>
-                        <select name="" id="">
-                            <option value="">Rent</option>
-                            <option value="">Buy</option>
-                        </select>
-                    </div>
-                    <div class="price-range text-center">
-                        <label for="price-range">Price Range</label>
-                        <div class="range">
-                            <figure class="usd-img">
-                                <img src="./Assets/$.png" alt="">
+            <form action="">
+                <div class="range-box">
+                    <div class="rent-usd">
+                        <div class="range mb-1">
+                            <figure class="dollar-sign">
+                                <img src="./Assets/dollar-sign 1.png" alt="">
                             </figure>
-                            <select name="price-range" id="price-range">
-                                <option value="">USD</option>
-                                <option value="">INR</option>
+                            <select name="" id="">
+                                <option value="">Rent</option>
+                                <option value="">Buy</option>
+                            </select>
+                        </div>
+                        <div class="price-range text-center">
+                            <label for="price-range">Price Range</label>
+                            <div class="range">
+                                <figure class="usd-img">
+                                    <img src="./Assets/$.png" alt="">
+                                </figure>
+                                <select name="price-range" id="price-range">
+                                    <option value="">USD</option>
+                                    <option value="">INR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desire">
+                        <input type="text" name="" id="desire-location" placeholder="Your desiered location goes here">
+                        <!-- ========= dual‑price slider ========= -->
+                        <div class="slider-wrapper">
+                            <div class="values">
+                                <span id="priceMin">$ 5,000</span>
+                                <span id="priceMax">$ 15,000</span>
+                            </div>
+                            <div class="range-slider">
+                                <input type="range" id="inputMin" min="0" max="20000" step="100" value="5000">
+                                <input type="range" id="inputMax" min="0" max="20000" step="100" value="15000">
+                                <div class="slider-track"></div>
+                                <div class="slider-fill" id="fill"></div>
+                            </div>
+                        </div>
+                        <!-- ===================================== -->
+                    </div>
+                    <div class="house-room">
+                        <div class="range mb-3">
+                            <figure class="house-img">
+                                <img src="./Assets/house.png" alt="">
+                            </figure>
+                            <select name="" id="">
+                                <option value="">House</option>
+                                <option value="">Flat</option>
+                            </select>
+                        </div>
+                        <div class="range">
+                            <figure class="room-img">
+                                <img src="./Assets/room.png" alt="">
+                            </figure>
+                            <select name="" id="">
+                                <option value="">2 Rooms</option>
+                                <option value="">3 Rooms</option>
+                                <option value="">4 Rooms</option>
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="desire">
-                    <input type="text" name="" id="desire-location" placeholder="Your desiered location goes here">
-                    <!-- ========= dual‑price slider ========= -->
-                    <div class="slider-wrapper">
-                        <div class="values">
-                            <span id="priceMin">$ 5,000</span>
-                            <span id="priceMax">$ 15,000</span>
-                        </div>
-                        <div class="range-slider">
-                            <input type="range" id="inputMin" min="0" max="20000" step="100" value="5000">
-                            <input type="range" id="inputMax" min="0" max="20000" step="100" value="15000">
-                            <div class="slider-track"></div>
-                            <div class="slider-fill" id="fill"></div>
+                    <div class="border-y">
+                        <span></span>
+                    </div>
+                    <div class=" search-btn">
+                        <div class="btn btn-primary">
+                            Search
                         </div>
                     </div>
-                    <!-- ===================================== -->
                 </div>
-                <div class="house-room">
-                    <div class="range mb-3">
-                        <figure class="house-img">
-                            <img src="./Assets/house.png" alt="">
-                        </figure>
-                        <select name="" id="">
-                            <option value="">House</option>
-                            <option value="">Flat</option>
-                        </select>
-                    </div>
-                    <div class="range">
-                        <figure class="room-img">
-                            <img src="./Assets/room.png" alt="">
-                        </figure>
-                        <select name="" id="">
-                            <option value="">2 Rooms</option>
-                            <option value="">3 Rooms</option>
-                            <option value="">4 Rooms</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="border-y">
-                    <span></span>
-                </div>
-                <div class=" search-btn">
-                    <div class="btn btn-primary">
-                        Search
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- Apartment section -->
