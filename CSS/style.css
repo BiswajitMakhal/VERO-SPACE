@@ -470,6 +470,7 @@ input[type=range]::-moz-range-thumb {
     text-wrap: nowrap;
     max-width: 175px;
     margin: 0 auto;
+    font-family: "Lato", sans-serif;
 }
 
 .prop-img {
@@ -563,19 +564,6 @@ input[type=range]::-moz-range-thumb {
 
 .icon-content {
     height: 60px;
-}
-
-/* for tablet screen */
-.about-tablet {
-    max-width: 592px;
-    max-height: 616px;
-    display: none;
-}
-
-.about-tablet>img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
 }
 
 /* Explore section */
@@ -729,19 +717,6 @@ input[type=range]::-moz-range-thumb {
     object-fit: contain;
 }
 
-/* For tablet view */
-.service-tablet {
-    max-width: 571px;
-    max-height: 559px;
-    display: none;
-    margin: auto;
-}
-
-.service-tablet>img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
 
 /* Testimonail section */
 .testimonial-section {
@@ -981,6 +956,7 @@ input[type=range]::-moz-range-thumb {
     padding: 20px 0;
 }
 
+/* ---------------------------------------------BREAKPOINT------------------------------------------------------------------ */
 
 @media screen and (max-width:1400px) {
 
@@ -1014,6 +990,16 @@ input[type=range]::-moz-range-thumb {
     /* services section */
     .overlap-issue {
         max-width: 420px;
+    }
+
+    .service-img {
+        max-width: 435px;
+    }
+
+    .service-s-img {
+        max-width: 200px;
+        left: -75px;
+        bottom: -36px;
     }
 
     /* Testimonial section */
@@ -1140,6 +1126,13 @@ input[type=range]::-moz-range-thumb {
         top: -235px;
     }
 
+    .desire,
+    #desire-location,
+    .slider-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .rent-usd,
     .range select,
     .house-room {
@@ -1245,7 +1238,6 @@ input[type=range]::-moz-range-thumb {
         width: 65px;
     }
 
-
 }
 
 @media screen and (max-width:767.98px) {
@@ -1268,21 +1260,21 @@ input[type=range]::-moz-range-thumb {
 
     /* About section */
     .about-section {
-        padding: 40px 0;
+        padding: 150px 0 30px 0;
     }
 
     .icon-content {
         font-size: 14px;
     }
 
-    /* for tablet screen */
-    .about-tablet {
-        display: block;
-        margin: 0 auto;
+    .about-img {
+        max-width: 430px;
     }
 
-    .about-img {
-        display: none;
+    .about-small {
+        max-width: 350px;
+        top: -146px;
+        right: -55px;
     }
 
     /* Apartment section */
@@ -1293,6 +1285,10 @@ input[type=range]::-moz-range-thumb {
     }
 
     /* Explore section */
+    .explore-section {
+        padding-bottom: 60px;
+    }
+
     .explore-wrapper {
         padding: 45px 0;
     }
@@ -1302,17 +1298,17 @@ input[type=range]::-moz-range-thumb {
     }
 
     /* service section */
-    .service-img {
-        display: none;
-    }
 
     .submit-btn {
         font-size: 13px;
     }
 
-    /* for tablet screen */
-    .service-tablet {
-        display: block;
+    .service-img {
+        max-width: 350px;
+    }
+
+    .service-s-img {
+        max-width: 180px;
     }
 
     /* Testimonial section */
@@ -1328,6 +1324,11 @@ input[type=range]::-moz-range-thumb {
     /* Email newsletters section */
     .email-section {
         padding: 50px 0;
+    }
+
+    #email {
+        padding: 11px 28px;
+        font-size: 13px;
     }
 
     .email-btn {
@@ -1381,8 +1382,6 @@ input[type=range]::-moz-range-thumb {
         font-size: 10px;
     }
 
-
-
     /* Range section */
     .range-box {
         width: 97%;
@@ -1405,7 +1404,7 @@ input[type=range]::-moz-range-thumb {
 
     /* About-section */
     .about-section {
-        padding: 30px 0;
+        padding: 88px 0 30px 0;
     }
 
     .about-content>p {
@@ -1416,15 +1415,36 @@ input[type=range]::-moz-range-thumb {
         margin-bottom: 40px;
     }
 
+    .about-img {
+        max-width: 250px;
+    }
+
+    .about-small {
+        max-width: 200px;
+        top: -85px;
+        right: -33px;
+    }
+
     /* Explore section */
     .explore-section {
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
 
     .explore-wrapper {
         margin: 0 auto;
         width: 97%;
         border-radius: 18px;
+    }
+
+    /* Services section  */
+    .service-img {
+        max-width: 216px;
+    }
+
+    .service-s-img {
+        max-width: 116px;
+        left: -41px;
+        bottom: -31px;
     }
 
     /* Testimonial section */

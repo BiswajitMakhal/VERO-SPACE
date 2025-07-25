@@ -885,6 +885,11 @@ h1 {
         padding-bottom: 48px;
     }
 
+    #email {
+        padding: 11px 28px;
+        font-size: 13px;
+    }
+
     .email-btn {
         font-size: 13px;
     }

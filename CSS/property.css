@@ -1051,6 +1051,13 @@ input[type=range]::-moz-range-thumb {
         top: -235px;
     }
 
+    .desire,
+    #desire-location,
+    .slider-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .rent-usd,
     .range select,
     .house-room {
@@ -1075,7 +1082,7 @@ input[type=range]::-moz-range-thumb {
         font-size: 20px;
     }
 
-    /* Filter section */
+    /* -----------Filter section---------- */
 
     /* swiper slider for laptop */
     #explore-swiper {
@@ -1108,6 +1115,11 @@ input[type=range]::-moz-range-thumb {
     #property-card-4,
     #property-card-6 {
         flex-direction: column-reverse;
+    }
+
+    /* square feet and price range */
+    .range-container {
+        max-width: 100%;
     }
 
     /* Email newsletter section */
@@ -1169,6 +1181,11 @@ input[type=range]::-moz-range-thumb {
     /* Email newsletters section */
     .email-section {
         padding: 50px 0;
+    }
+
+    #email {
+        padding: 11px 28px;
+        font-size: 13px;
     }
 
     .email-btn {
