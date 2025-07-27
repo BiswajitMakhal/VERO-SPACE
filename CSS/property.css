@@ -235,6 +235,11 @@ nav>ul {
     display: none;
 }
 
+.mobile-hidden a:hover,
+.nav-btn>a:hover {
+    color: var(--primary-color);
+}
+
 
 /* Banner secetion */
 .banner-section {

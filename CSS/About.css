@@ -237,6 +237,11 @@ nav>ul {
     display: none;
 }
 
+.mobile-hidden a:hover,
+.nav-btn>a:hover {
+    color: var(--primary-color);
+}
+
 /* Banner secetion */
 .banner-section {
     padding: 10px 30px;
@@ -360,6 +365,10 @@ h1 {
 
 .icon-content {
     height: 60px;
+}
+
+.icon-content>p {
+    font-size: 12px;
 }
 
 /* For tablet screen */
